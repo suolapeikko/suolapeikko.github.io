@@ -15,3 +15,11 @@ List of servers supporting kpasswd service:
 User account attributes from LDAP:
 
 `ldapsearch -H "ldap://dc.company.com" -b "dc=us,dc=company,dc=com" -LLL sAMAccountName="accountname"`
+
+Show Active Directory settings:
+
+`dsconfigad -show`
+
+Show user IDs (domain user ID is > 1000):
+
+`dscl . -list /Users UniqueID`
