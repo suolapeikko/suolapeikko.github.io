@@ -23,3 +23,14 @@ Show Active Directory settings:
 Show user IDs (domain user ID is > 1000):
 
 `dscl . -list /Users UniqueID`
+
+Network
+---------------------
+
+Show active network adapter:
+`ifconfig | grep -B 6 'status: active' | head -n 1 | cut -d : -f 1§`
+
+Nmap cheat sheet:
+
+[](https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/)
+
