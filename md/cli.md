@@ -24,10 +24,16 @@ Show user IDs (domain user ID is > 1000):
 
 `dscl . -list /Users UniqueID`
 
+Get Active Directory Domain details:
+
+`sudo plutil -p "/Library/Preferences/OpenDirectory/DynamicData/Active Directory/EU.plist"`
+
+
 Network
 ---------------------
 
 Show active network adapter:
+
 `ifconfig | grep -B 6 'status: active' | head -n 1 | cut -d : -f 1§`
 
 [Nmap cheat sheet](https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/)
