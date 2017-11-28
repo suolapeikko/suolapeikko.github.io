@@ -49,4 +49,15 @@ Check Java home:
 
 `/usr/libexec/java_home`
 
+System Integrity Protection (SIP)
+---------------------------------
+
+Disable SIP by booting into Recoevery Mode (command+R) and starting Terminal:
+
+`csrutil disable`
+
+Re-enable SIP with DTrace support:
+
+`csrutil enable --without dtrace`
+
 
