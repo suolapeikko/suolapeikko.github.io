@@ -60,4 +60,11 @@ Re-enable SIP with DTrace support:
 
 `csrutil enable --without dtrace`
 
+iOS and Apple Configurator 2
+----------------------------
+
+List all device serials that have been attached to your Mac:
+
+
+`cfgutil -f get serialNumber | awk -v x=4 '{print $x}'`
 
