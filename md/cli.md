@@ -38,6 +38,10 @@ Show active network adapter:
 
 [Nmap cheat sheet](https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/)
 
+Check count of spesific port (80) [socket statuses](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Protocol_operation) in 5 second intervals:
+
+`while :; do sudo netstat -an|grep ESTABLISHED |grep 80| wc -l; sleep 5;  done`
+
 Java
 ----
 
