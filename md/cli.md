@@ -60,6 +60,15 @@ Re-enable SIP with DTrace support:
 
 `csrutil enable --without dtrace`
 
+DTrace
+------
+
+Show available DTrae scripts:
+
+`apropos ftrace`
+
+[My FinMacSysAdmin examples](https://github.com/suolapeikko/dtrace)
+
 iOS and Apple Configurator 2
 ----------------------------
 
