@@ -63,9 +63,9 @@ Re-enable SIP with DTrace support:
 DTrace
 ------
 
-Show available DTrae scripts:
+List available DTrace scripts:
 
-`apropos ftrace`
+`apropos dtrace`
 
 [My FinMacSysAdmin examples](https://github.com/suolapeikko/dtrace)
 
