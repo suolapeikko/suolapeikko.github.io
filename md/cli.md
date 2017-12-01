@@ -42,6 +42,10 @@ Check count of spesific port (80) [socket statuses](https://en.wikipedia.org/wik
 
 `while :; do sudo netstat -an|grep ESTABLISHED |grep 80| wc -l; sleep 5;  done`
 
+COMMAND | PID | USER | FD | TYPE | DEVICE | SIZE/OFF | NODE | NAME
+
+`lsof -i -n`
+
 Java
 ----
 
