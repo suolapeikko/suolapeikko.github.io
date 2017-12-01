@@ -90,5 +90,5 @@ Smart Card testing utility:
 Certificates
 ------------
 
-[My certificate management repository](./md/certificates.md)
+[My certificate management repository](https://github.com/suolapeikko/about_certificates)
 
