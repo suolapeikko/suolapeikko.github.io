@@ -54,7 +54,7 @@ Check Java home:
 System Integrity Protection (SIP)
 ---------------------------------
 
-Disable SIP by booting into Recoevery Mode (command+R) and starting Terminal:
+Disable SIP by booting into Recovery Mode (command+R) and starting Terminal:
 
 `csrutil disable`
 
@@ -77,3 +77,12 @@ iOS and Apple Configurator 2
 List serials of all devices that are attached to your Mac:
 
 `cfgutil -f get serialNumber | awk -v x=4 '{print $x}'`
+
+Smart Cards
+-----------
+
+Smart Card testing utility:
+
+`pcsctest`
+
+[ATR value decoder](https://smartcard-atr.appspot.com)
