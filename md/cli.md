@@ -82,6 +82,14 @@ List serials of all devices that are attached to your Mac:
 
 `cfgutil -f get serialNumber | awk -v x=4 '{print $x}'`
 
+Report information related to macOS Server caching servers running on the computer or on the local network:
+
+`/usr/bin/AssetCacheLocatorUtil`
+
+Clean/reformat configuration profile:
+
+`security cms -D -i Signed.mobileconfig | xmllint --format - > Unsigned.mobileconfig`
+
 Smart Cards
 -----------
 
