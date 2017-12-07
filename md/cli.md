@@ -106,4 +106,4 @@ Certificates and signing
 
 Sign configuration profile:
 
-`/usr/bin/security cms -S -N "3rd Party Mac Developer Installer: John Doe (A1B1C1D1E1F1)" -i unsigned.mobileconfig -o signed.mobileconfig`
+`security cms -S -N "3rd Party Mac Developer Installer: John Doe (A1B1C1D1E1F1)" -i unsigned.mobileconfig -o signed.mobileconfig`
