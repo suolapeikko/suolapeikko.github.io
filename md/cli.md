@@ -99,8 +99,11 @@ Smart Card testing utility:
 
 [ATR value decoder](https://smartcard-atr.appspot.com)
 
-Certificates
-------------
+Certificates and signing
+------------------------
 
 [My certificate management repository](https://github.com/suolapeikko/about_certificates)
 
+Sign configuration profile:
+
+`/usr/bin/security cms -S -N "3rd Party Mac Developer Installer: John Doe (A1B1C1D1E1F1)" -i unsigned.mobileconfig -o signed.mobileconfig`
