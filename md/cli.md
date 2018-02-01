@@ -28,6 +28,9 @@ Get Active Directory Domain details:
 
 `sudo plutil -p "/Library/Preferences/OpenDirectory/DynamicData/Active Directory/EU.plist"`
 
+Bind Mac to Active Directory:
+
+`dsconfigad -a name_for_example_serial -u service_account -ou "OU=Macintosh,OU=Computers,DC=company,DC=com" -domain company.com -mobile enable -mobileconfirm enable -localhome enable -useuncpath enable`
 
 Network
 -------
