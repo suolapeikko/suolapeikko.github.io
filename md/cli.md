@@ -26,7 +26,7 @@ Show user IDs (domain user ID is > 1000):
 
 Get Active Directory Domain details:
 
-`sudo plutil -p "/Library/Preferences/OpenDirectory/DynamicData/Active Directory/EU.plist"`
+`sudo plutil -p "/Library/Preferences/OpenDirectory/DynamicData/Active Directory/<fill_domain_here>.plist"`
 
 Bind Mac to Active Directory:
 
