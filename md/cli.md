@@ -56,7 +56,7 @@ Check Java home:
 
 `/usr/libexec/java_home`
 
-[My Linux Java troubleshooting repository with commands that can also be applied to macOS with minor modifications](./troubleshooting_java.md)
+[My Linux Java troubleshooting repository with commands that can also be applied to macOS with minor modifications](https://suolapeikko.github.io/md/troubleshooting_java.md)
 
 System Integrity Protection (SIP)
 ---------------------------------
