@@ -105,7 +105,7 @@ Smart Card testing utility:
 Certificates and signing
 ------------------------
 
-[My certificate management repository](https://github.com/suolapeikko/about_certificates)
+[My certificate management repository](https://suolapeikko.github.io/md/cli.html)
 
 Sign configuration profile:
 
