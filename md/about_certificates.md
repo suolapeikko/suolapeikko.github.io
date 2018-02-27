@@ -46,10 +46,12 @@ PKCS#12 or PFX format uses binary format and is encryptable. Comes usually with 
 
 ## Steps to open an existing certificate and building it back to contain certificate chain (eg. for Jamf Pro JSS server SSL certificate)
 
-1. Decode pfx or pkcs#12 to text (both are binary formats with same content, pfx is usually used by Microsoft)
+* Decode pfx or pkcs#12 to text (both are binary formats with same content, pfx is usually used by Microsoft)
+
 `$ openssl pkcs12 -in bundle.customer.com.pfx -out package.pem -nodes`
 
-2. Extract key and certificate parts from the file to separate files, eg. mykey.txt and mycert.txt
+* Extract key and certificate parts from the file to separate files, eg. mykey.txt and mycert.txt
+
 `$ cp package.pem mykey.txt`
 `$ cp package.pem mycert.txt`
 
