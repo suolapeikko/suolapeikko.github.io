@@ -57,22 +57,22 @@ PKCS#12 or PFX format uses binary format and is encryptable. Comes usually with 
 
 Then edit in vi, leaving private key to mykey.txt and certificate to mycert.txt
 
-3. Decode certificate to obtain intermediate certificate type (See Issuer -> CN)
+* Decode certificate to obtain intermediate certificate type (See Issuer -> CN)
 
 `$ openssl x509 -in mycert.txt -text -noout`
 
-4. Download intermediate CA file from the web, based on step 3, then copy it to a file, for example geotrust_ssl_ca_g3.txt
+* Download intermediate CA file from the web, based on step 3, then copy it to a file, for example geotrust_ssl_ca_g3.txt
 
-5. Decode intermediate certificate to obtain root certificate type (See Issuer -> CN)
+* Decode intermediate certificate to obtain root certificate type (See Issuer -> CN)
 
 `$ openssl x509 -in geotrust_ssl_ca_g3.txt -text -noout`
 
-6. Download root CA file from the web, based on step 5, then copy it to a file, for example geotrust_global_ca.txt
+* Download root CA file from the web, based on step 5, then copy it to a file, for example geotrust_global_ca.txt
 
-7. Concatenate intermediate and root certificates to a single text file
+* Concatenate intermediate and root certificates to a single text file
 
 `$ cat geotrust_ssl_ca_g3.txt geotrust_global_ca.txt > ca_bundle.txt`
 
-8. Compile everything back to pfx/p12 again
+* Compile everything back to pfx/p12 again
 
 `$ openssl pkcs12 -export -out bundle.customer.com.p12 -inkey mykey.txt -in mycert.txt -certfile ca_bundle.txt`
