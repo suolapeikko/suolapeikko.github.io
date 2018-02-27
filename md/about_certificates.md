@@ -17,48 +17,62 @@ PKCS#12 or PFX format uses binary format and is encryptable. Comes usually with 
 ## Some Example Commands
 
 ### Decode PEM encoded certificate
+
 `$ openssl x509 -in certificate.crt -text -noout`
 
 ### Decode DER encoded certificate
+
 `$ openssl x509 -in certificate.crt -inform der -text -noout`
 
 ### Create a CSR
+
 `$ openssl req -new -newkey rsa:2048 -nodes -keyout customer.com.key.txt -out customer.com.csr.txt`
 
 ### Covert pfx/p12 to text format
+
 `$ openssl pkcs12 -in bundle.customer.com.pfx -out package.pem -nodes`
 
 ### Convert key to file from pfx/p12
+
 `$ openssl pkcs12 -in bundle.customer.com.pfx -clcerts -nokeys -out domain.cer`
 
 ### Convert certificate to file from pfx/p12
+
 `$ openssl pkcs12 -in bundle.customer.com.pfx -nocerts -nodes  -out domain.key`
 
 ### Convert CA certificate to file from pfx/p12
+
 `$ openssl pkcs12 -in domain.pfx -out domain-ca.crt -nodes -nokeys -cacerts`
 
 ## Steps to open an existing certificate and building it back to contain certificate chain (eg. for Jamf Pro JSS server SSL certificate)
 
 1. Decode pfx or pkcs#12 to text (both are binary formats with same content, pfx is usually used by Microsoft)
+
 `$ openssl pkcs12 -in bundle.customer.com.pfx -out package.pem -nodes`
 
 2. Extract key and certificate parts from the file to separate files, eg. mykey.txt and mycert.txt
+
 `$ cp package.pem mykey.txt`
 `$ cp package.pem mycert.txt`
+
 Then edit in vi, leaving private key to mykey.txt and certificate to mycert.txt
 
 3. Decode certificate to obtain intermediate certificate type (See Issuer -> CN)
+
 `$ openssl x509 -in mycert.txt -text -noout`
 
 4. Download intermediate CA file from the web, based on step 3, then copy it to a file, for example geotrust_ssl_ca_g3.txt
 
 5. Decode intermediate certificate to obtain root certificate type (See Issuer -> CN)
+
 `$ openssl x509 -in geotrust_ssl_ca_g3.txt -text -noout`
 
 6. Download root CA file from the web, based on step 5, then copy it to a file, for example geotrust_global_ca.txt
 
 7. Concatenate intermediate and root certificates to a single text file
+
 `$ cat geotrust_ssl_ca_g3.txt geotrust_global_ca.txt > ca_bundle.txt`
 
 8. Compile everything back to pfx/p12 again
+
 `$ openssl pkcs12 -export -out bundle.customer.com.p12 -inkey mykey.txt -in mycert.txt -certfile ca_bundle.txt`
