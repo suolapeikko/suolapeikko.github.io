@@ -110,3 +110,7 @@ Certificates and signing
 Sign configuration profile:
 
 `security cms -S -N "Developer ID Installer: John Doe (A1B1C1D1E1F1)" -i unsigned.mobileconfig -o signed.mobileconfig`
+
+Show signing info:
+
+`codesign -dv --verbose=4 /Applications/MyApp.app/`
