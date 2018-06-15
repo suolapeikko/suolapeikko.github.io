@@ -114,3 +114,26 @@ Sign configuration profile:
 Show signing info:
 
 `codesign -dv --verbose=4 /Applications/MyApp.app/`
+
+How to create macOS SSH keys and add them to autherized hosts list on the server
+--------------------------------------------------------------------------------
+
+Create SSH keys with custom name and passphrase
+
+`ssh-keygen -t rsa`
+
+SSH into your host and create .ssh directory with correct rights
+
+`mkdir .ssh`
+
+`chmod 700 .ssh`
+
+Create authorized_keys file to .ssh and add rights
+
+`cd .ssh`
+
+`touch authorized_keys`
+
+`chmod 644 authorized_keys`
+
+Copy contents of host_id_rsa.pub to authorized_keys
