@@ -115,7 +115,7 @@ Show signing info:
 
 `codesign -dv --verbose=4 /Applications/MyApp.app/`
 
-How to create SSH keys and add them to autherized hosts list on the server
+How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
 
 Create SSH keys with custom name and passphrase
