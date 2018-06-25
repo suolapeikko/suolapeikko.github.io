@@ -117,7 +117,7 @@ Show signing info:
 
 Sign dmg:
 
-`codesign --force -s "Developer ID Application: Firstname Lastname (ABCDEF123456)" MyApp.dmg`
+`codesign --force -s "Developer ID Application: John Doe (A1B1C1D1E1F1)" MyApp.dmg`
 
 How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
