@@ -115,6 +115,9 @@ Show signing info:
 
 `codesign -dv --verbose=4 /Applications/MyApp.app/`
 
+Sign dmg
+`codesign --force -s "Developer ID Application: Firstname Lastname (ABCDEF123456)" MyApp.dmg`
+
 How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
 
