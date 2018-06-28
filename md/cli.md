@@ -145,3 +145,34 @@ Create authorized_keys file to .ssh and add rights
 `chmod 644 authorized_keys`
 
 Copy contents of host_id_rsa.pub to authorized_keys
+
+Packaging
+--------------------------------------------------------------------------------
+
+Build a package (folder structure TestPic/, TestPic/payload)
+
+`pkgbuild --root payload --install-location "/Users/me/Desktop/" --identifier com.github.TestPic --version 1.0 TestPic.pkg`
+
+Inspect the package
+
+`lsbom $(pkgutil --bom TestPic.pkg)`
+
+Expand the package
+
+`pkgutil --expand TestPic.pkg TestPicExpanded`
+
+Install the package
+
+`sudo installer -pkg TestPic.pkg -tgt /`
+
+Find all the packages in the path
+
+`pkgutil --pkgs=com.github.*`
+
+Inspect the package
+
+`pkgutil --info com.github.TestPic`
+
+Inspect what was installed from the package
+
+`pkgutil --files com.github.TestPic`
