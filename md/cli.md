@@ -176,3 +176,8 @@ Inspect the package
 Inspect what was installed from the package
 
 `pkgutil --files com.github.TestPic`
+
+Forget a package
+
+`pkgutil --forget com.github.TestPic`
+
