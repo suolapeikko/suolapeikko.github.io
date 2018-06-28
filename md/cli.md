@@ -133,7 +133,12 @@ Check code signing:
 
 Check package signature:
 
-`pkgutil --check-signature Signed-TestPic-1.0b.pkg `
+`pkgutil --check-signature Signed-TestPic-1.0b.pkg`
+
+Check whether the signature passes GateKeeper test:
+
+`spctl -a -v --type install Signed-TestPic-1.0b.pkg`
+
 
 How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
@@ -199,4 +204,8 @@ Sign package:
 
 Check package signature:
 
-`pkgutil --check-signature Signed-TestPic-1.0b.pkg `
+`pkgutil --check-signature Signed-TestPic-1.0b.pkg`
+
+Check whether the signature passes GateKeeper test:
+
+`spctl -a -v --type install Signed-TestPic-1.0b.pkg`
