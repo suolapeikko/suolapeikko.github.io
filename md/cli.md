@@ -131,6 +131,10 @@ Check code signing:
 
 `codesign -dv --verbose=4 MyApp.dmg`
 
+Check package signature:
+
+`pkgutil --check-signature Signed-TestPic-1.0b.pkg `
+
 How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
 
@@ -189,3 +193,10 @@ Forget a package:
 
 `pkgutil --forget com.github.TestPic`
 
+Sign package:
+
+`productsign --sign "Developer ID Installer: John Doe (A1B1C1D1E1F1)" TestPic-1.0b.pkg Signed-TestPic-1.0b.pkg`
+
+Check package signature:
+
+`pkgutil --check-signature Signed-TestPic-1.0b.pkg `
