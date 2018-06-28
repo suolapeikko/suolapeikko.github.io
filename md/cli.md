@@ -107,7 +107,7 @@ Certificates and signing
 
 [My certificate management notes](https://suolapeikko.github.io/md/cli.html)
 
-List valid identities
+List valid identities:
 
 `security find-identity -p basic -v`
 
@@ -123,6 +123,10 @@ Sign dmg:
 
 `codesign --force -s "Developer ID Application: John Doe (A1B1C1D1E1F1)" MyApp.dmg`
 
+Sign package:
+
+`productsign --sign "Developer ID Installer: John Doe (A1B1C1D1E1F1)" TestPic-1.0b.pkg Signed-TestPic-1.0b.pkg`
+
 Check code signing:
 
 `codesign -dv --verbose=4 MyApp.dmg`
@@ -130,17 +134,17 @@ Check code signing:
 How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
 
-Create SSH keys with custom name and passphrase
+Create SSH keys with custom name and passphrase:
 
 `ssh-keygen -t rsa`
 
-SSH into your host and create .ssh directory with correct rights
+SSH into your host and create .ssh directory with correct rights:
 
 `mkdir .ssh`
 
 `chmod 700 .ssh`
 
-Create authorized_keys file to .ssh and add rights
+Create authorized_keys file to .ssh and add rights:
 
 `cd .ssh`
 
@@ -153,35 +157,35 @@ Copy contents of host_id_rsa.pub to authorized_keys
 Packaging
 --------------------------------------------------------------------------------
 
-Build a package (folder structure TestPic/, TestPic/payload)
+Build a package (folder structure TestPic/, TestPic/payload):
 
 `pkgbuild --root payload --install-location "/Users/me/Desktop/" --identifier com.github.TestPic --version 1.0 TestPic.pkg`
 
-Inspect the package
+Inspect the package:
 
 `lsbom $(pkgutil --bom TestPic.pkg)`
 
-Expand the package
+Expand the package:
 
 `pkgutil --expand TestPic.pkg TestPicExpanded`
 
-Install the package
+Install the package:
 
 `sudo installer -pkg TestPic.pkg -tgt /`
 
-Find all the packages in the path
+Find all the packages in the path:
 
 `pkgutil --pkgs=com.github.*`
 
-Inspect the package
+Inspect the package:
 
 `pkgutil --info com.github.TestPic`
 
-Inspect what was installed from the package
+Inspect what was installed from the package:
 
 `pkgutil --files com.github.TestPic`
 
-Forget a package
+Forget a package:
 
 `pkgutil --forget com.github.TestPic`
 
