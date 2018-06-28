@@ -107,6 +107,10 @@ Certificates and signing
 
 [My certificate management notes](https://suolapeikko.github.io/md/cli.html)
 
+List valid identities
+
+`security find-identity -p basic -v`
+
 Sign configuration profile:
 
 `security cms -S -N "Developer ID Installer: John Doe (A1B1C1D1E1F1)" -i unsigned.mobileconfig -o signed.mobileconfig`
