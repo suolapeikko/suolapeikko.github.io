@@ -79,4 +79,4 @@ Then edit in vi, leaving private key to mykey.txt and certificate to mycert.txt
 
 * Check the contents of the created p12 certificate bundle
 
-`openssl pkcs12 -info -in bundle.customer.com.p12`
+`$ openssl pkcs12 -info -in bundle.customer.com.p12`
