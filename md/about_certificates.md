@@ -76,3 +76,7 @@ Then edit in vi, leaving private key to mykey.txt and certificate to mycert.txt
 * Compile everything back to pfx/p12 again
 
 `$ openssl pkcs12 -export -out bundle.customer.com.p12 -inkey mykey.txt -in mycert.txt -certfile ca_bundle.txt`
+
+* Check the contents of the created p12 certificate bundle
+
+`openssl pkcs12 -info -in bundle.customer.com.p12`
