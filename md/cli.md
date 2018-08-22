@@ -47,9 +47,9 @@ Check count of spesific port (80) [socket statuses](https://en.wikipedia.org/wik
 
 COMMAND | PID | USER | FD | TYPE | DEVICE | SIZE/OFF | NODE | NAME
 
-Or better yet, list all states:
+Or better yet, list all states for spesific port (80):
 
-`while :; do sudo netstat -nat | awk '{print $6}' | sort | uniq -c | sort -n; sleep 5; echo; done`
+`while :; do sudo netstat -nat | grep 80 | awk '{print $6}' | sort | uniq -c | sort -n; sleep 5; echo; done`
 
 Show all connections:
 
