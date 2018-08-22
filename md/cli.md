@@ -47,6 +47,12 @@ Check count of spesific port (80) [socket statuses](https://en.wikipedia.org/wik
 
 COMMAND | PID | USER | FD | TYPE | DEVICE | SIZE/OFF | NODE | NAME
 
+Or better yet, list all states:
+
+`while :; do sudo netstat -nat | awk '{print $6}' | sort | uniq -c | sort -n; sleep 5; echo; done`
+
+Show all connections:
+
 `lsof -i -n`
 
 Java
