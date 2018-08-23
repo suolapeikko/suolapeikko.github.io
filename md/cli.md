@@ -55,6 +55,10 @@ Show all connections:
 
 `lsof -i -n`
 
+Show all TCP states for spesific port (80)
+
+`ss -tan |grep 80`
+
 Java
 ----
 
