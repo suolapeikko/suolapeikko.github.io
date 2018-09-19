@@ -149,6 +149,10 @@ Check whether the signature passes GateKeeper test:
 
 `spctl -a -v --type install Signed-TestPic-1.0b.pkg`
 
+Grab certificates from URL:
+
+`openssl s_client -connect my.server:443 2>&1 < /dev/null | sed -n '/-----BEGIN/,/-----END/p' > certificate.pem`
+
 
 How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
