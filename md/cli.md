@@ -115,7 +115,7 @@ Smart Card testing utility:
 Certificates and signing
 ------------------------
 
-[My certificate management notes](https://suolapeikko.github.io/md/cli.html)
+[My certificate management notes](https://suolapeikko.github.io/md/about_certificates.html)
 
 List valid identities:
 
