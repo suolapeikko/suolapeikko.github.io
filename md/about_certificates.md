@@ -44,6 +44,10 @@ PKCS#12 or PFX format uses binary format and is encryptable. Comes usually with 
 
 `$ openssl pkcs12 -in domain.pfx -out domain-ca.crt -nodes -nokeys -cacerts`
 
+### Check p12 file
+
+`openssl pkcs12 -info -in keyStore.p12`
+
 ## Steps to open an existing certificate and building it back to contain certificate chain (eg. for Jamf Pro JSS server SSL certificate)
 
 * Decode pfx or pkcs#12 to text (both are binary formats with same content, pfx is usually used by Microsoft)
