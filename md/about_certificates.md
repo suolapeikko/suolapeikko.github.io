@@ -46,7 +46,7 @@ PKCS#12 or PFX format uses binary format and is encryptable. Comes usually with 
 
 ### Check p12 file
 
-`openssl pkcs12 -info -in keyStore.p12`
+`openssl pkcs12 -info -in bundle.p12`
 
 ## Steps to open an existing certificate and building it back to contain certificate chain (eg. for Jamf Pro JSS server SSL certificate)
 
