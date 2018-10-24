@@ -88,6 +88,19 @@ List available DTrace scripts:
 
 [My FinMacSysAdmin examples](https://github.com/suolapeikko/dtrace)
 
+Kernel Extensions
+------
+
+Find the bundle identifiers of apps that require kernel extension approval:
+
+`kextstat | grep -v com.apple`
+
+Find the Team ID of apps that require kernel extension approval:
+
+`sqlite3 /var/db/SystemPolicyConfiguration/KextPolicy
+
+SELECT * FROM kext_policy;`
+
 iOS and Apple Configurator 2
 ----------------------------
 
