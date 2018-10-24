@@ -97,9 +97,9 @@ Find the bundle identifiers of apps that require kernel extension approval:
 
 Find the Team ID of apps that require kernel extension approval:
 
-`sqlite3 /var/db/SystemPolicyConfiguration/KextPolicy
+`sqlite3 /var/db/SystemPolicyConfiguration/KextPolicy`
 
-SELECT * FROM kext_policy;`
+`SELECT * FROM kext_policy;`
 
 iOS and Apple Configurator 2
 ----------------------------
