@@ -101,6 +101,12 @@ Find the Team ID of apps that require kernel extension approval:
 
 `SELECT * FROM kext_policy;`
 
+Load / unload kernel extensions:
+
+`kextload <kernel_extension>`
+
+`kextunload <kernel_extension>`
+
 iOS and Apple Configurator 2
 ----------------------------
 
