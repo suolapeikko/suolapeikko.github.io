@@ -116,6 +116,13 @@ Clean/reformat configuration profile:
 
 `security cms -D -i Signed.mobileconfig | xmllint --format - > Unsigned.mobileconfig`
 
+Profiles
+--------
+
+List all Configuration Profiles with extended information:
+
+`sudo /usr/bin/profiles show -P`
+
 Smart Cards
 -----------
 
