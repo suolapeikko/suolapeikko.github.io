@@ -123,6 +123,14 @@ List all Configuration Profiles with extended information:
 
 `sudo /usr/bin/profiles show -P`
 
+List all profiles options:
+
+`profiles -h`
+
+Renew a certificate payload. Remember to use sudo if you want to renew computer level profile, otherwise leave it out:
+
+`sudo profiles -W -p <profile identifier>`
+
 Smart Cards
 -----------
 
