@@ -55,9 +55,17 @@ Show all connections:
 
 `lsof -i -n`
 
-Show all TCP states for spesific port (80)
+Show all TCP states for spesific port (80):
 
 `ss -tan |grep 80`
+
+Check if you can connect to a specific server and port (Linux):
+
+`echo -n > /dev/tcp/www.server.com/1234`
+
+Check if you can connect to a specific server and port (macOS):
+
+`nc -z www.server.com 1234`
 
 Java
 ----
