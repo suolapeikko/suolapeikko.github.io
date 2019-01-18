@@ -63,6 +63,10 @@ Check if you can connect to a specific server and port (Linux):
 
 `echo -n > /dev/tcp/www.server.com/1234`
 
+or
+
+`nc -zv www.server.com 1234`
+
 Check if you can connect to a specific server and port (macOS):
 
 `nc -z www.server.com 1234`
