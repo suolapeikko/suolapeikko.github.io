@@ -71,6 +71,10 @@ Check if you can connect to a specific server and port (macOS):
 
 `nc -z www.server.com 1234`
 
+or (macOS Mojave)
+
+`/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke www.server.com 1234 1234`
+
 Java
 ----
 
