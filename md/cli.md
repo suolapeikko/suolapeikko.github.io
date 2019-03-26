@@ -283,6 +283,8 @@ Download and install [vfuse](https://github.com/chilcote/vfuse)
 
 Download and install [Qemu](https://github.com/chilcote/vfuse/wiki/Received-signal-11)
 
+Download macOS from Mac App Store, wrap it into a disk image (create an empty dmg using Disk Utility and copy macOS installer there), drag the installer from newly created disk image to AutoDMG and let it convert it.
+
 Create a template:
 ```
 {
@@ -303,6 +305,6 @@ Create a template:
 }
 ```
 
-Create the VM with initial snapshot:
+Create the VM with initial snapshot using vfuse and Qemu:
 
 `vfuse --use-qemu /opt/local/bin/qemu-img -t generic_template.json --snapshot`
