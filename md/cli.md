@@ -283,13 +283,13 @@ Download and install [vfuse](https://github.com/chilcote/vfuse)
 
 Download and install [Qemu](https://github.com/chilcote/vfuse/wiki/Received-signal-11)
 
-Create a template
+Create a template:
 ```
 {
     "fusion_path": "",
     "source_dmg": "/Users/me/Development/macOS/Mojave/osx-10.14.4-18E226.apfs.dmg",
     "output_dir": "/Users/me/Desktop",
-    "output_name": "mojave-vm-10.14",
+    "output_name": "mojave-vm-10.14.4",
     "cache": false,
     "mem_size": 4096,
     "disk_type": 0,
@@ -302,3 +302,7 @@ Create a template
     "serial_number": "VMWARE000001"
 }
 ```
+
+Create the VM with initial snapshot:
+
+`vfuse --use-qemu /opt/local/bin/qemu-img -t generic_template.json --snapshot`
