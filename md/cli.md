@@ -228,7 +228,7 @@ Create authorized_keys file to .ssh and add rights:
 Copy contents of host_id_rsa.pub to authorized_keys
 
 Packaging
---------------------------------------------------------------------------------
+---------
 
 Build a package (folder structure TestPic/, TestPic/payload):
 
@@ -273,3 +273,32 @@ Check package signature:
 Check whether the signature passes GateKeeper test:
 
 `spctl -a -v --type install Signed-TestPic-1.0b.pkg`
+
+Create a macOS VM for VMWare Fusion
+-----------------------------------
+
+Download and install [AutoDMG](https://github.com/MagerValp/AutoDMG)
+
+Download and install [vfuse](https://github.com/chilcote/vfuse)
+
+Download and install [Qemu](https://github.com/chilcote/vfuse/wiki/Received-signal-11)
+
+Create a template
+```
+{
+    "fusion_path": "",
+    "source_dmg": "/Users/me/Development/macOS/Mojave/osx-10.14.4-18E226.apfs.dmg",
+    "output_dir": "/Users/me/Desktop",
+    "output_name": "mojave-vm-10.14",
+    "cache": false,
+    "mem_size": 4096,
+    "disk_type": 0,
+    "bridged": false,
+    "mac_address": "",
+    "enable3d": false,
+    "vnc_port": 5901,
+    "vnc_passwd": "",
+    "hw_model": "iMacPro1,1",
+    "serial_number": "VMWARE000001"
+}
+```
