@@ -308,3 +308,14 @@ Create a template:
 Create the VM with initial snapshot using vfuse and Qemu:
 
 `vfuse --use-qemu /opt/local/bin/qemu-img -t generic_template.json --snapshot`
+
+Install and remove app extensions
+---------------------------------
+
+Install an app extension:
+
+`pluginkit -a MyApp.app/Contents/PlugIns/MyExtension.appex/`
+
+Remove an app extension:
+
+`pluginkit -r MyApp.app/Contents/PlugIns/MyExtension.appex/`
