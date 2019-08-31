@@ -203,6 +203,10 @@ Grab certificates from URL:
 
 `openssl s_client -connect my.server:443 2>&1 < /dev/null | sed -n '/-----BEGIN/,/-----END/p' > certificate.pem`
 
+Check application signing:
+
+`spctl -a -vvvv Application.app`
+
 
 How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
