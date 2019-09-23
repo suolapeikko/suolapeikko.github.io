@@ -48,6 +48,10 @@ PKCS#12 or PFX format uses binary format and is encryptable. Comes usually with 
 
 `openssl pkcs12 -info -in bundle.p12`
 
+### Check validity of a server certificate using openssl
+
+`openssl s_client -servername NAME -connect HOST:PORT 2>/dev/null | openssl x509 -noout -dates`
+
 ## Steps to open an existing certificate and building it back to contain certificate chain (eg. for Jamf Pro JSS server SSL certificate)
 
 * Decode pfx or pkcs#12 to text (both are binary formats with same content, pfx is usually used by Microsoft)
