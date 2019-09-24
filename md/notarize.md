@@ -1,10 +1,10 @@
 # Package Notarization Quick Start Guide
 
-## Add an application spesific password
+## Add an application specific password
 
-1) Log in to appleid.apple.com using your developer ID
+1) Log in to appleid.apple.com using your Apple Developer ID
 
-2) Create an app specific password for "altool" label and save the app password
+2) Create an application specific password for "altool" label and save the app password
 
 ## Sign the package
 
