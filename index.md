@@ -15,4 +15,4 @@ Certificates
 
 Apple's Package Notarization
 ----------------------------
-* [Package Notarization Quick Start Guide](./md/notarization.md)
+* [Package Notarization Quick Start Guide](./md/notarize.md)
