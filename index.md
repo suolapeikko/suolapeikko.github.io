@@ -13,3 +13,6 @@ Certificates
 ------------
 * [Working with digital certificate formats](./md/about_certificates.md)
 
+Apple's Package Notarization
+----------------------------
+* [Package Notarization Quick Start Guide](./md/notarization.md)
