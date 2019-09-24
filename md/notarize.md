@@ -20,7 +20,9 @@
 
 The command above will prompt for an application password that you generated in the first step of this guide. You can also use password parameter by adding the application password to your Keychain and then adding this to the command above:  `-p "@keychain:altool"`
 
-## Grab the RequestUUID from the XML output of the previous command
+## Copy the RequestUUID from the XML output of the previous command
+
+Just copy the RequestUUID part from the XML output of the previous command
 
 ## Check the notarization status
 
