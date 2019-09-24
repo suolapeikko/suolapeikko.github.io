@@ -28,6 +28,6 @@ Just copy the RequestUUID part from the XML output of the previous command
 
 `xcrun altool --notarization-info RequestUUIDHere -u first.last@acme.com
 `
-## After notarization status shows success (instead of in progress), confirm success
+## (Optional) After notarization status shows success (instead of in progress), you can confirm the success
 
 `spctl -a -v --type install my_signed.pkg`
