@@ -18,7 +18,7 @@
 
 `xcrun altool --notarize-app -t osx -f my_signed.pkg --primary-bundle-id com.my.app -u first.last@acme.com --output-format xml`
 
-(Note! It will prompt for password, and that password is the app password generated for altool)
+It will prompt for a password, and that password is the application password generated for altool. You can also automate the password fill-in by adding the password to Keychain and add this to the command:  `-p “@keychain:ALTOOL`
 
 ## Grab the RequestUUID from the XML output of the previous command
 
