@@ -207,6 +207,9 @@ Check application signing:
 
 `spctl -a -vvvv Application.app`
 
+Check application entitlements:
+
+`codesign -d --entitlements :- /Applications/ApplicationName.app`
 
 How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
