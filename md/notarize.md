@@ -27,6 +27,10 @@ Just copy the RequestUUID part from the XML output of the previous command
 ## Check the notarization status
 
 `xcrun altool --notarization-info RequestUUIDHere -u first.last@acme.com
+
+## Staple the ticket to your distribution
+
+`xcrun stapler staple my_signed.pkg`
 `
 ## (Optional) After notarization status shows success (instead of in progress), you can confirm the success
 
