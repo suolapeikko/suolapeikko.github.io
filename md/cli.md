@@ -211,6 +211,10 @@ Check application entitlements:
 
 `codesign -d --entitlements :- /Applications/ApplicationName.app`
 
+List all certificates:
+
+`security find-identity -p basic -v`
+
 How to create SSH keys and add them to authorized hosts list on the server
 --------------------------------------------------------------------------------
 
