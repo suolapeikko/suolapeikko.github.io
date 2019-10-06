@@ -26,7 +26,7 @@ Just copy the RequestUUID part from the XML output of the previous command
 
 ## Check the notarization status
 
-`xcrun altool --notarization-info RequestUUIDHere -u first.last@acme.com
+`xcrun altool --notarization-info RequestUUIDHere -u first.last@acme.com`
 
 ## Staple the ticket to your distribution
 
