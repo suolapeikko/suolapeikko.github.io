@@ -153,6 +153,18 @@ Renew a certificate payload. Remember to use sudo if you want to renew computer 
 
 `sudo profiles -W -p <profile identifier>`
 
+Re-check and re-enroll (if necessary) DEP-enabled Mac:
+
+`sudo profiles -N`
+
+Check computer enrollment status:
+
+`profiles status -type enrollment`
+
+Print DEP configuration:
+
+`profiles -e`
+
 Smart Cards
 -----------
 
