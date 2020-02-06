@@ -8,6 +8,12 @@
 
 ## Sign the package
 
+You can check your available identities by running this:
+
+`security find-identity -p basic -v`
+
+Copy the row with your Developer ID Installer and paste it to the command below and run it:
+
 `productsign --sign "Developer ID Installer: Firstnme Lastname (ABCD12345)" my.pkg my_signed.pkg`
 
 ## (Optional) Verify package signature
