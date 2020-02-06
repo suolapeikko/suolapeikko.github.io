@@ -8,7 +8,7 @@
 
 ## Sign the package
 
-You can check your available identities by running this:
+You can check your available identities by running the following command:
 
 `security find-identity -p basic -v`
 
