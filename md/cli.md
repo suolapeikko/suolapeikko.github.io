@@ -75,6 +75,13 @@ or (macOS Mojave)
 
 `/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke www.server.com 1234 1234`
 
+FileVault
+---------
+
+Change personal recovery key and escrow the key to MDM if macOS has a proper Configuration Profile installed:
+
+`fdesetup changerecovery -personal`
+
 Java
 ----
 
